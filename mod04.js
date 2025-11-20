@@ -17,6 +17,22 @@ window.quizBanks.mod04 = [
     }
   },
   {
+  "q": "Your web application needs four instances to support steady traffic all of the time. On the last day of the month, the traffic triples. What is the most cost-effective way to handle this pattern? (Select the best answer)",
+  "choices": [
+    "Run 12 Reserved Instances all of the time.",
+    "Run four On-Demand Instances constantly, then add eight more On-Demand Instances on the last day of each month.",
+    "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month.",
+    "Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month."
+  ],
+  "answer": 2,
+  "explain": "The steady, predictable baseline workload (4 instances running 24/7) should be covered with Reserved Instances because they provide a major discount for long-term, always-on usage. The monthly spike requires temporary capacity, so On-Demand Instances are the most cost-effective way to handle short-term bursts without long-term commitment.",
+  "why_others_are_not_correct": {
+    "0": "Running 12 Reserved Instances all month would waste money—only 4 are needed constantly, and buying Reserved Instances for a workload that only exists one day per month is not cost-effective.",
+    "1": "Running all instances On-Demand ignores the large savings available from using Reserved Instances for the steady workload that runs every day.",
+    "3": "Reserved Instances require 1- or 3-year commitments. Buying RIs for instances used only one day per month wastes money and provides no meaningful benefit."
+  }
+},
+  {
     "q": "A company wants to estimate the monthly cost of running its new web application on AWS. Which tool should they use?",
     "choices": [
       "AWS Pricing Calculator",
